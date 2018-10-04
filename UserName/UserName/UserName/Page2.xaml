@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UserName.Page2"
+             Title="Registro">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
+                             Margin="0,20,0,0"
+                             Grid.Row="0">
+                    <Label Text="Registrate"
+                           FontSize="Large"
+                           TextColor="Black" />
+                </StackLayout>
+                <Image Source="reg.png"
+                       HeightRequest="70"
+                       VerticalOptions="EndAndExpand"/>
+                <Entry Grid.Row="1"
+                       Placeholder="Usuario"
+                       PlaceholderColor="#000000"
+                       FontSize="16"/>
+                <Entry Grid.Row="2"
+                       Placeholder="Email"
+                       PlaceholderColor="#000000"
+                       FontSize="16"/>
+                <Entry Grid.Row="3"
+                       Placeholder="Contraseña"
+                       PlaceholderColor="#000000"
+                       FontSize="16"/>
+                <Entry Grid.Row="4"
+                       Placeholder="Confirma tu Contraseña"
+                       PlaceholderColor="#000000"
+                       FontSize="16"/>
+                <Button x:Name="btnReg" 
+                        Clicked="btnReg_Clicked" 
+                        Text="Registrar"  
+                        BackgroundColor="Black" 
+                        TextColor="White" 
+                        HeightRequest="50"
+                        VerticalOptions="Start"
+                        Grid.Row="6"/>
+                <Grid Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

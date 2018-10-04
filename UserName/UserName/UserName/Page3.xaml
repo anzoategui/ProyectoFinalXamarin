@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:UserName"
+             x:Class="UserName.Page3">
+    <MasterDetailPage.Master>
+
+        <local:Maestro></local:Maestro>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <local:Detalle></local:Detalle>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
